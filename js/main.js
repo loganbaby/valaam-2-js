@@ -7,3 +7,9 @@ $('.part').hover (
 		$('.description').fadeOut(50);
 	}
 )
+
+$('.part').onwheel = function() {
+	if(event.ctrlKey) {
+			return false;
+	}
+}
